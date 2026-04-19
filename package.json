@@ -1,0 +1,26 @@
+{
+  "name": "alfred-decision-layer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "next dev",
+    "check": "tsc --noEmit",
+    "build": "next build",
+    "start": "next start",
+    "build:engine": "tsc --outDir dist --rootDir src --module CommonJS --noEmit false",
+    "start:engine": "node dist/index.js"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "openai": "^6.34.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.2"
+  }
+}
